@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
+    
     <!-- Welcome -->
     <section
     id="welcome-section"
@@ -25,5 +26,123 @@
     </div>
   </section>
 
-  
+  <section id="aboutme" class="container my-5">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img
+          src="profpic.jpg"
+          class="img-fluid rounded shadow"
+          alt="Profile Picture"
+        />
+        <a
+          class="btn btn-warning btn-large text-uppercase"
+          onclick="window.open('cv_leric.jpg')"
+        >
+          Download CV
+        </a>
+      </div>
+      <div class="col-md-8">
+        <ul class="nav nav-tabs" id="aboutMeTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="bio-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#bio"
+              type="button"
+              role="tab"
+            >
+              Bio
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="hobbies-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#hobbies"
+              type="button"
+              role="tab"
+            >
+              Hobbies
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3" id="aboutMeTabsContent">
+          <div class="tab-pane fade show active" id="bio" role="tabpanel">
+            <p>
+              I'm Marck Leric A. Sagun, from Bachelor of Science in
+              Information System 3A. I don’t have a background in programming
+              in my everyday life, but I do experience it in school while
+              studying. I’m just a beginner who is willing to learn about it
+              and apply it in the future as my course is aligned with it.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="hobbies" role="tabpanel">
+            <p>
+              Gaming, Photography, Driving, Basketball, Travelling, and
+              Watching Movies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container my-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Java GUI</h5>
+            <p class="card-text">
+              A Java project creating a graphical user interface for simple
+              applications.
+            </p>
+            <a
+              href="https://github.com/sagunlrc/act2-sagun/tree/main/javaprojects"
+              class="btn btn-primary"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Text File Compression</h5>
+            <p class="card-text">
+              A C++ project to compress and decompress text files.
+            </p>
+            <a
+              href="https://github.com/sagunlrc/act2-sagun/blob/main/assets/Balane_and_Sagun_Compression%20(1).cpp"
+              class="btn btn-primary"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">ATM Simulation</h5>
+            <p class="card-text">
+              A C++ project that simulates ATM functionalities.
+            </p>
+            <a
+              href="https://github.com/sagunlrc/act2-sagun/blob/main/assets/atm_simulation.cpp"
+              class="btn btn-primary"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </body>

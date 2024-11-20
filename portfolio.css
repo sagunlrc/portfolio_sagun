@@ -27,3 +27,54 @@ body {
     color: white;
     border: none;
   }
+
+  #aboutme img {
+    border: 5px solid #000000;
+    border-radius: 10px;
+  }
+  
+  #aboutme .nav-tabs .nav-link {
+    font-weight: bold;
+  }
+  
+  #aboutme .nav-tabs .nav-link.active {
+    background-color: #000000;
+    color: white;
+  }
+  
+  #aboutme .btn-warning {
+    background-color: black;
+    color: white;
+    border: none; 
+  }
+  
+  #aboutme .btn-warning:hover,
+  #projects .btn-primary:hover {
+    background-color: #333; 
+  }
+
+  #projects .btn-primary {
+    background-color: black;
+    color: white;
+    border: none; 
+  }
+
+  #projects .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  #projects .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  #projects .card-text {
+    font-size: 0.9rem;
+    color: #000000;
+  }
