@@ -78,3 +78,17 @@ body {
     font-size: 0.9rem;
     color: #000000;
   }
+
+  #skills .text-center {
+    margin: 20px;
+  }
+  
+  #skills i {
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  #skills p {
+    font-weight: bold;
+    margin-top: 5px;
+  }
