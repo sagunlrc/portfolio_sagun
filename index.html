@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagun's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+        <!-- Navigation -->
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    
+    <!-- Welcome -->
+    <section
+      id="welcome-section"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div class="text-center">
+        <h1 class="text-white">Welcome to My Portfolio</h1>
+        <button
+          class="btn btn-primary btn-lg mt-3"
+          onclick="scrollToSection('aboutme')"
+        >
+          Get started
+        </button>
+      </div>
+    </section>
+
+    <section id="aboutme" class="container my-5">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="profpic.jpg"
+            class="img-fluid rounded shadow"
+            alt="Profile Picture"
+          />
+          <a
+            class="btn btn-warning btn-large text-uppercase"
+            onclick="window.open('cv_leric.jpg')"
+          >
+            Download CV
+          </a>
+        </div>
+        <div class="col-md-8">
+          <ul class="nav nav-tabs" id="aboutMeTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="bio-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#bio"
+                type="button"
+                role="tab"
+              >
+                Bio
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="hobbies-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#hobbies"
+                type="button"
+                role="tab"
+              >
+                Hobbies
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="aboutMeTabsContent">
+            <div class="tab-pane fade show active" id="bio" role="tabpanel">
+              <p>
+                I'm Marck Leric A. Sagun, from Bachelor of Science in
+                Information System 3A. I don’t have a background in programming
+                in my everyday life, but I do experience it in school while
+                studying. I’m just a beginner who is willing to learn about it
+                and apply it in the future as my course is aligned with it.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="hobbies" role="tabpanel">
+              <p>
+                Gaming, Photography, Driving, Basketball, Travelling, and
+                Watching Movies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container my-5">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Java GUI</h5>
+              <p class="card-text">
+                A Java project creating a graphical user interface for simple
+                applications.
+              </p>
+              <a
+                href="https://github.com/sagunlrc/act2-sagun/tree/main/javaprojects"
+                class="btn btn-primary"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Text File Compression</h5>
+              <p class="card-text">
+                A C++ project to compress and decompress text files.
+              </p>
+              <a
+                href="https://github.com/sagunlrc/act2-sagun/blob/main/assets/Balane_and_Sagun_Compression%20(1).cpp"
+                class="btn btn-primary"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">ATM Simulation</h5>
+              <p class="card-text">
+                A C++ project that simulates ATM functionalities.
+              </p>
+              <a
+                href="https://github.com/sagunlrc/act2-sagun/blob/main/assets/atm_simulation.cpp"
+                class="btn btn-primary"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    ]
+
+    <section id="skills" class="container my-5">
+      <h2 class="text-center mb-4">My Skills</h2>
+      <div class="d-flex justify-content-around">
+        <div class="text-center">
+          <i class="fab fa-cuttlefish fa-3x"></i>
+          <p>C, C++</p>
+        </div>
+        <div class="text-center">
+          <i class="fab fa-java fa-3x"></i>
+          <p>Java</p>
+        </div>
+        <div class="text-center">
+          <i class="fab fa-html5 fa-3x"></i>
+          <p>HTML, CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-4 bg-dark text-white">
+      <div class="social-icons">
+        <a
+          href="https://web.facebook.com/leric.sagun.7/"
+          target="_blank"
+          class="icon-link mx-2"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://github.com/sagunlrc"
+          target="_blank"
+          class="icon-link mx-2"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p>&copy; 2024 Sagun's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
